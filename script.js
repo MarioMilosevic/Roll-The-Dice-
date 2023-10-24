@@ -1,3 +1,4 @@
+
 // varijable
 const kockica1 = document.querySelector(".kockica1");
 const kockica2 = document.querySelector(".kockica2");
