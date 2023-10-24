@@ -39,7 +39,8 @@ html {
 }
 .totalScore,
 .playerScoreDiv,
-.button-div {
+.button-div,
+.playerName {
   margin: 0 auto;
 }
 .playerScoreDiv {
@@ -78,13 +79,12 @@ html {
   font-size: 32px;
 }
 
-.playerName{
-margin: 0 auto;
-}
 .player {
   background-color: white;
-  width: 50px;
-  height: 20px;
+  height: 24px;
+  margin: 0 auto;
+  line-height: 24px;
+  text-align: center;
 }
 
 .reset {

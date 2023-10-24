@@ -6,6 +6,8 @@ let totalScorePlayer1 = document.querySelector(".totalScorePlayer1");
 let totalScorePlayer2 = document.querySelector(".totalScorePlayer2");
 const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
+let player1Name = document.querySelector('#player1')
+let player2Name = document.querySelector('#player2')
 //////////////////////////
 let player1dice, player2dice;
 let player1Score = 0,
@@ -49,7 +51,8 @@ reset.addEventListener("click", function () {
 });
 
 function newGame(){
-const player1Name = prompt('Insert player1 name')
-const player2Name = prompt("Insert player2 name")
-
+player1Name = player1Name.textContent = prompt('Insert player1 name')
+player2Name = player2Name.textContent = prompt("Insert player2 name")
 }
+
+// newGame()
