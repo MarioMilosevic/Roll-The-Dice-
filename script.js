@@ -49,8 +49,7 @@ reset.addEventListener("click", function () {
 });
 
 function newGame(){
-const player1Name = prompt('Insert username')
+const player1Name = prompt('Insert player1 name')
 const player2Name = prompt("Insert player2 name")
-}
 
-newGame()
+}
