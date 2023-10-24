@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  box-sizing: border-box;
+}
+
+html {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,126,253,1) 100%);
+  height: 1000px;
+}
+
+.gameName {
+  margin: 100px auto 0 auto;
+  border: 1px solid black;
+}
+
+.gameName p {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.container {
+  height: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.button-div,
+.container,
+.gameName,
+.playerScoreDiv,
+.totalScore {
+  display: flex;
+  width: 75%;
+  background-color: rgb(0, 255, 128);
+}
+.totalScore,
+.playerScoreDiv,
+.button-div {
+  margin: 0 auto;
+}
+.playerScoreDiv {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+.button-div {
+  height: 25%;
+  border: 1px solid black;
+}
+
+.totalScore {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.diceButton {
+  margin: 10px auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: bisque;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.kockica1,
+.kockica2 {
+  margin: 100px auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 32px;
+}
+
+.reset {
+  height: 75px;
+  width: 75px;
+  background-color: white;
+  border-radius: 35%;
+  line-height: 35px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.resultText {
+  background-color: white;
+  margin: 10px auto;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.totalScorePlayer1,
+.totalScorePlayer2 {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: white;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
