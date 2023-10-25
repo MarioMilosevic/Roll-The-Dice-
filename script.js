@@ -51,7 +51,6 @@ button2.addEventListener("click", function () {
   if (player2Score >= 10) {
     alert("Player 2 won");
     disableGame();
-    
   }
 });
 
@@ -64,9 +63,8 @@ reset.addEventListener("click", function () {
     kockica1.textContent =
     kockica2.textContent =
       0;
-      reset.style.display = 'none'
-      enableGame()
-
+  reset.style.display = "none";
+  button1.classList.remove("disabled-button");
 });
 
 // if (totalScorePlayer1 >= 20) {
@@ -77,24 +75,12 @@ reset.addEventListener("click", function () {
 //   console.log('nzm');
 // }
 
-function newGame() {
-  player1Name = player1Name.textContent = prompt("Insert player1 name");
-  player2Name = player2Name.textContent = prompt("Insert player2 name");
-}
-
-// newGame()
-
 function disableGame() {
   button1.classList.add("disabled-button");
   button2.classList.add("disabled-button");
-  showNewGameButton()
+  showNewGameButton();
 }
 
-function enableGame(){
-  button1.classList.remove('disabled-button')
-  button2.classList.remove('disabled-button')
-}
-
-function showNewGameButton(){
-  reset.style.display = 'block'
+function showNewGameButton() {
+  reset.style.display = "block";
 }
