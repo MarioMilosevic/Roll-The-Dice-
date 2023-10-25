@@ -67,6 +67,22 @@ html {
   cursor: pointer;
 }
 
+/* Style for the disabled button */
+.disabled-button {
+  background-color: #ccc; /* Disabled button background color */
+  color: #666; /* Disabled button text color */
+  cursor: not-allowed; /* Cursor style when hovering over the disabled button */
+  pointer-events: none; /* Prevent interactions with the button */
+  border: 1px solid #999; /* Border color for disabled button */
+  
+}
+
+/* Style for the disabled button on hover (optional) */
+.disabled-button:hover {
+  background-color: #2f107e; /* Background color on hover */
+}
+
+
 .kockica1,
 .kockica2 {
   margin: 100px auto 0px auto;
@@ -97,7 +113,7 @@ html {
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
-  display: none;
+  /* display: none; */
 }
 
 .resultText {

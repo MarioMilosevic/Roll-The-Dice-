@@ -1,4 +1,3 @@
-
 // varijable
 const kockica1 = document.querySelector(".kockica1");
 const kockica2 = document.querySelector(".kockica2");
@@ -28,11 +27,6 @@ function rollTheDice(dice, playerScore) {
 button1.addEventListener("click", function () {
   player1Score = rollTheDice(kockica1, player1Score);
   totalScorePlayer1.textContent = player1Score;
-  console.log(`player1score ${player1Score}`);
-  console.log(`totalScorePlayer1 ${totalScorePlayer1}`);
-  console.log(
-    `totalScoorePlayer1 text content ${totalScorePlayer1.textContent}`
-  );
 });
 
 button2.addEventListener("click", function () {
@@ -50,6 +44,9 @@ reset.addEventListener("click", function () {
     kockica2.textContent =
       0;
 });
+
+
+
 
 function newGame(){
 player1Name = player1Name.textContent = prompt('Insert player1 name')
