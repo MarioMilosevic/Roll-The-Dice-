@@ -6,12 +6,8 @@
 }
 
 html {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(45, 126, 253, 1) 100%
-  );
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,126,253,1) 100%);
   height: 1000px;
 }
 
@@ -53,6 +49,7 @@ html {
   border-top: 1px solid black;
 }
 .button-div {
+  height: 25%;
   border: 1px solid black;
 }
 
@@ -61,7 +58,6 @@ html {
   border-right: 1px solid black;
 }
 .diceButton {
-  position:absolute;
   margin: 10px auto;
   height: 50px;
   width: 50px;
@@ -75,14 +71,17 @@ html {
 .disabled-button {
   background-color: #ccc; /* Disabled button background color */
   color: #666; /* Disabled button text color */
-  cursor: no-drop; /* Cursor style when hovering over the disabled button */
+  cursor: not-allowed; /* Cursor style when hovering over the disabled button */
+  pointer-events: none; /* Prevent interactions with the button */
   border: 1px solid #999; /* Border color for disabled button */
+  
 }
 
 /* Style for the disabled button on hover (optional) */
-/* .disabled-button:hover {
-  background-color: #2f107e; /* Background color on hover 
-} */
+.disabled-button:hover {
+  background-color: #2f107e; /* Background color on hover */
+}
+
 
 .kockica1,
 .kockica2 {
@@ -91,8 +90,8 @@ html {
   height: 100px;
   border: 1px solid black;
   background-color: white;
-  text-align: center;
-  line-height: 100px;
+  text-align: center; 
+   line-height: 100px;
   font-size: 32px;
 }
 
@@ -134,4 +133,3 @@ html {
   line-height: 40px;
   text-align: center;
 }
-
