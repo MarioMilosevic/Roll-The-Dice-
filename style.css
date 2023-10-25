@@ -109,7 +109,7 @@ html {
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
-  /* display: none; */
+  display: none;
 }
 
 .resultText {

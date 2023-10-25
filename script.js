@@ -30,8 +30,11 @@ button1.addEventListener("click", function () {
   } else {
     player1Score = rollTheDice(kockica1, player1Score);
     totalScorePlayer1.textContent = player1Score;
-    button1.classList.add('disabled-button')
-    button2.classList.remove('disabled-button')
+    button1.classList.add("disabled-button");
+    button2.classList.remove("disabled-button");
+  }
+  if (player1Score >= 10) {
+    alert("Player 1 won");
   }
 });
 
@@ -41,8 +44,11 @@ button2.addEventListener("click", function () {
   } else {
     player2Score = rollTheDice(kockica2, player2Score);
     totalScorePlayer2.textContent = player2Score;
-    button2.classList.add('disabled-button')
-    button1.classList.remove('disabled-button')
+    button2.classList.add("disabled-button");
+    button1.classList.remove("disabled-button");
+  }
+  if (player2Score >= 10) {
+    alert("Player 2 won");
   }
 });
 
@@ -56,6 +62,14 @@ reset.addEventListener("click", function () {
     kockica2.textContent =
       0;
 });
+
+// if (totalScorePlayer1 >= 20) {
+//   alert("Player 1 has won");
+// } else if (totalScorePlayer2 >= 20) {
+//   alert("Player 2 has won");
+// } else{
+//   console.log('nzm');
+// }
 
 function newGame() {
   player1Name = player1Name.textContent = prompt("Insert player1 name");
