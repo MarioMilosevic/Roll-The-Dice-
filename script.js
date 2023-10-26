@@ -14,13 +14,31 @@
     player2Score = 0;
   const insertPlayer1Name = prompt("Player1 name");
   const insertPlayer2Name = prompt("Player2 name");
+
+  function checkPreviousResults() {
+    // Check if there are previous game results in local storage
+    const storedPlayer1Score = localStorage.getItem("player1Score");
+    const storedPlayer2Score = localStorage.getItem("player2Score");
+    const winner = localStorage.getItem("winner");
+
+    // If there are stored results, update the game state
+    if (storedPlayer1Score && storedPlayer2Score && winner) {
+      player1Score = parseInt(storedPlayer1Score);
+      player2Score = parseInt(storedPlayer2Score);
+      totalScorePlayer1.textContent = player1Score;
+      totalScorePlayer2.textContent = player2Score;
+      disableGame();
+      alert(`Previous winner: ${winner}`);
+    }
+    // ... rest of your existing code ..
+  }
+
   // functions
-  function getPlayerName(){
+  function getPlayerName() {
     player1Name.textContent = insertPlayer1Name;
     player2Name.textContent = insertPlayer2Name;
   }
-  getPlayerName()
-
+  getPlayerName();
 
   function rollTheDice(dice, playerScore) {
     let randomNumber = Math.floor(Math.random() * 6) + 1;
@@ -52,6 +70,8 @@
     if (player1Score >= 10) {
       alert("Player 1 won");
       disableGame();
+      localStorage.setItem("Player1Score", player1Score);
+      localStorage.setItem("Winner", "Player1");
     }
   });
 
@@ -67,6 +87,8 @@
     if (player2Score >= 10) {
       alert("Player 2 won");
       disableGame();
+      localStorage.setItem("Player2Score", player2Score);
+      localStorage.setItem("Winner", "Player2");
     }
   });
 
