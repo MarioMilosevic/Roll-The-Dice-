@@ -63,17 +63,11 @@ reset.addEventListener("click", function () {
     kockica1.textContent =
     kockica2.textContent =
       0;
-  reset.style.display = "none";
+  reset.style.visibility = "hidden";
   button1.classList.remove("disabled-button");
 });
 
-// if (totalScorePlayer1 >= 20) {
-//   alert("Player 1 has won");
-// } else if (totalScorePlayer2 >= 20) {
-//   alert("Player 2 has won");
-// } else{
-//   console.log('nzm');
-// }
+
 
 function disableGame() {
   button1.classList.add("disabled-button");
@@ -82,5 +76,5 @@ function disableGame() {
 }
 
 function showNewGameButton() {
-  reset.style.display = "block";
+  reset.style.visibility = "visible";
 }
