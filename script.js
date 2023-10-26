@@ -10,11 +10,17 @@
   let player1Name = document.querySelector("#player1");
   let player2Name = document.querySelector("#player2");
   //////////////////////////
-  let player1dice, player2dice;
   let player1Score = 0,
     player2Score = 0;
-
+  const insertPlayer1Name = prompt("Player1 name");
+  const insertPlayer2Name = prompt("Player2 name");
   // functions
+  function getPlayerName(){
+    player1Name.textContent = insertPlayer1Name;
+    player2Name.textContent = insertPlayer2Name;
+  }
+  getPlayerName()
+
 
   function rollTheDice(dice, playerScore) {
     let randomNumber = Math.floor(Math.random() * 6) + 1;
