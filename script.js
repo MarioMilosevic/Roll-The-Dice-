@@ -67,7 +67,7 @@
       button1.classList.add("disabled-button");
       button2.classList.remove("disabled-button");
     }
-    if (player1Score >= 10) {
+    if (player1Score >= 20) {
       alert("Player 1 won");
       disableGame();
       localStorage.setItem("Player1Score", player1Score);
@@ -84,7 +84,7 @@
       button2.classList.add("disabled-button");
       button1.classList.remove("disabled-button");
     }
-    if (player2Score >= 10) {
+    if (player2Score >= 20) {
       alert("Player 2 won");
       disableGame();
       localStorage.setItem("Player2Score", player2Score);
